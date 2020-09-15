@@ -19,7 +19,40 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.HTMLButton")
+                .setHost(host,"xui_ui_htmlbutton3")
+                .setLeft("26.666666666666668em")
+                .setTop("20.571428571428573em")
+                .setCaption("Next")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput16")
+                .setDirtyMark(false)
+                .setLeft("6.857142857142857em")
+                .setTop("3.0476190476190474em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("DEM")
+                .setType("file")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput17")
+                .setDirtyMark(false)
+                .setLeft("6.857142857142857em")
+                .setTop("5.333333333333333em")
+                .setWidth("17.98095238095238em")
+                .setHeight("1.7523809523809524em")
+                .setLabelSize("8em")
+                .setLabelCaption("Imperviousness")
+                .setType("file")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
@@ -28,7 +61,8 @@ xui.Class('App', 'xui.Module',{
         customAppend : function(parent, subId, left, top){
             // "return false" will cause all the internal UI controls will be added to the parent panel
             return false;
-        }
+        },
+        functions:{ }
         /*,
         // To determine how properties affects this module
         propSetAction : function(prop){
