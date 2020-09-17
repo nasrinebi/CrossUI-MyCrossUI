@@ -25,7 +25,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput5")
                 .setDirtyMark(false)
                 .setLeft("3.8095238095238093em")
-                .setTop("3.8095238095238093em")
+                .setTop("5.333333333333333em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("SWMM Input File")
@@ -37,7 +37,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput7")
                 .setDirtyMark(false)
                 .setLeft("3.8095238095238093em")
-                .setTop("6.857142857142857em")
+                .setTop("8.380952380952381em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Rainfall")
@@ -49,7 +49,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput8")
                 .setDirtyMark(false)
                 .setLeft("3.8095238095238093em")
-                .setTop("9.904761904761905em")
+                .setTop("11.428571428571429em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Temperature")
@@ -61,7 +61,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput11")
                 .setDirtyMark(false)
                 .setLeft("3.8095238095238093em")
-                .setTop("12.952380952380953em")
+                .setTop("14.476190476190476em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Cost File")
@@ -73,7 +73,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput12")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("12.952380952380953em")
+                .setTop("14.476190476190476em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Start Date")
@@ -85,7 +85,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput15")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("16em")
+                .setTop("17.523809523809526em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("End Date")
@@ -97,7 +97,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput20")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("3.8095238095238093em")
+                .setTop("5.333333333333333em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Iteration")
@@ -156,7 +156,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput30")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("6.857142857142857em")
+                .setTop("8.380952380952381em")
                 .setWidth("17.98095238095238em")
                 .setLabelSize("8em")
                 .setLabelCaption("             ET")
@@ -168,7 +168,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput31")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("9.904761904761905em")
+                .setTop("11.428571428571429em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Optimization")
@@ -185,7 +185,69 @@ xui.Class('App', 'xui.Module',{
                         "imageClass":"xui-icon-number2"
                     },
                     {
-
+                        "id":"ds",
+                        "caption":"ds"
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input1")
+                .setDirtyMark(false)
+                .setLeft("13.714285714285714em")
+                .setTop("1.5238095238095237em")
+                .setWidth("21.02857142857143em")
+                .setLabelSize("8em")
+                .setValue("     Hydrologic Modeling")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button6")
+                .setDirtyMark(false)
+                .setLeft("18.285714285714285em")
+                .setTop("22.095238095238095em")
+                .setCaption("Run")
+                .setImageClass("xui-icon-xui")
+                .onClick([
+                    {
+                        "desc":"Action 1",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            "Window will be closed once it is done.",
+                            "Running",
+                            400,
+                            10000
+                        ],
+                        "method":"message",
+                        "event":1
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button10")
+                .setDirtyMark(false)
+                .setLeft("24.38095238095238em")
+                .setTop("22.095238095238095em")
+                .setCaption("Save")
+                .setImageClass("xui-icon-xui")
+                .onClick([
+                    {
+                        "desc":"Action 1",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            "Window will be closed once it is done. ",
+                            "Saving",
+                            200,
+                            3000
+                        ],
+                        "method":"message",
+                        "event":1
                     }
                 ])
             );
