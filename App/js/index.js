@@ -73,7 +73,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput12")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("14.476190476190476em")
+                .setTop("17.523809523809526em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Start Date")
@@ -85,7 +85,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput15")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("17.523809523809526em")
+                .setTop("20.571428571428573em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("End Date")
@@ -203,7 +203,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_button6")
                 .setDirtyMark(false)
                 .setLeft("18.285714285714285em")
-                .setTop("22.095238095238095em")
+                .setTop("25.904761904761905em")
                 .setCaption("Run")
                 .setImageClass("xui-icon-xui")
                 .onClick([
@@ -228,7 +228,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_button10")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("22.095238095238095em")
+                .setTop("25.904761904761905em")
                 .setCaption("Save")
                 .setImageClass("xui-icon-xui")
                 .onClick([
@@ -278,6 +278,35 @@ xui.Class('App', 'xui.Module',{
                         "id":"i",
                         "caption":"Curve Number",
                         "imageClass":"xui-icon-number9"
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput158")
+                .setDirtyMark(false)
+                .setLeft("24.38095238095238em")
+                .setTop("14.476190476190476em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Routing")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id":"a",
+                        "caption":"Kinematic Wave",
+                        "imageClass":"xui-icon-number1"
+                    },
+                    {
+                        "id":"b",
+                        "caption":"Dynamic Wave",
+                        "imageClass":"xui-icon-number2"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"Steady State",
+                        "imageClass":"xui-icon-number3"
                     }
                 ])
             );
