@@ -185,15 +185,7 @@ xui.Class('App', 'xui.Module',{
                         "imageClass":"xui-icon-number2"
                     },
                     {
-                        "id":"c",
-                        "caption":"item 3",
-                        "imageClass":"xui-icon-number3"
-                    },
-                    {
-                        "id":"d",
-                        "caption":"item 4",
-                        "imageClass":"xui-icon-number4",
-                        "disabled":true
+
                     }
                 ])
             );
