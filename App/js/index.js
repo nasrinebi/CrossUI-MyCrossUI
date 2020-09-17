@@ -73,7 +73,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput12")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("11.428571428571429em")
+                .setTop("14.476190476190476em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Start Date")
@@ -85,7 +85,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_comboinput15")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("14.476190476190476em")
+                .setTop("17.523809523809526em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("End Date")
@@ -184,7 +184,6 @@ xui.Class('App', 'xui.Module',{
                         "caption":"Scatter Search",
                         "imageClass":"xui-icon-number2"
                     }
-
                 ])
             );
             
@@ -245,6 +244,40 @@ xui.Class('App', 'xui.Module',{
                         ],
                         "method":"message",
                         "event":1
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput143")
+                .setDirtyMark(false)
+                .setLeft("24.38095238095238em")
+                .setTop("11.428571428571429em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Infiltration")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id":"a",
+                        "caption":"Green Ampt",
+                        "imageClass":"xui-icon-number1"
+                    },
+                    {
+                        "id":"b",
+                        "caption":"Horton",
+                        "imageClass":"xui-icon-number2"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"Modified Green Ampt",
+                        "imageClass":"xui-icon-number3"
+                    },
+                    {
+                        "id":"i",
+                        "caption":"Curve Number",
+                        "imageClass":"xui-icon-number9"
                     }
                 ])
             );
