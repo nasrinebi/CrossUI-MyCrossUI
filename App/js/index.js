@@ -21,36 +21,141 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"xui_ui_htmlbutton3")
-                .setLeft("26.666666666666668em")
-                .setTop("20.571428571428573em")
-                .setCaption("Next")
-            );
-            
-            append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput16")
+                .setHost(host,"xui_ui_comboinput5")
                 .setDirtyMark(false)
-                .setLeft("6.857142857142857em")
-                .setTop("3.0476190476190474em")
+                .setLeft("6.095238095238095em")
+                .setTop("3.8095238095238093em")
                 .setWidth("18em")
                 .setLabelSize("8em")
-                .setLabelCaption("DEM")
+                .setLabelCaption("SWMM Input File")
                 .setType("file")
             );
             
             append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput17")
+                .setHost(host,"xui_ui_comboinput7")
                 .setDirtyMark(false)
-                .setLeft("6.857142857142857em")
-                .setTop("5.333333333333333em")
-                .setWidth("17.98095238095238em")
-                .setHeight("1.7523809523809524em")
+                .setLeft("6.095238095238095em")
+                .setTop("6.857142857142857em")
+                .setWidth("18em")
                 .setLabelSize("8em")
-                .setLabelCaption("Imperviousness")
+                .setLabelCaption("Rainfall")
                 .setType("file")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput8")
+                .setDirtyMark(false)
+                .setLeft("6.095238095238095em")
+                .setTop("9.904761904761905em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Temperature")
+                .setType("file")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput11")
+                .setDirtyMark(false)
+                .setLeft("6.095238095238095em")
+                .setTop("12.952380952380953em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Cost File")
+                .setType("file")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput12")
+                .setDirtyMark(false)
+                .setLeft("6.095238095238095em")
+                .setTop("16em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Start Date")
+                .setType("date")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput15")
+                .setDirtyMark(false)
+                .setLeft("6.095238095238095em")
+                .setTop("19.047619047619047em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("End Date")
+                .setType("date")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput20")
+                .setDirtyMark(false)
+                .setLeft("24.38095238095238em")
+                .setTop("3.8095238095238093em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Iteration")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id":"a",
+                        "caption":"100",
+                        "imageClass":"xui-icon-number1"
+                    },
+                    {
+                        "id":"b",
+                        "caption":"200",
+                        "imageClass":"xui-icon-number2"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"300",
+                        "imageClass":"xui-icon-number3"
+                    },
+                    {
+                        "id":"d",
+                        "caption":"400",
+                        "imageClass":"xui-icon-number4"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"500",
+                        "imageClass":"xui-icon-number5"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"600",
+                        "imageClass":"xui-icon-number6"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"700",
+                        "imageClass":"xui-icon-number7"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"800",
+                        "imageClass":"xui-icon-number8"
+                    },
+    
+                    {
+                        "id":"c",
+                        "caption":"900",
+                        "imageClass":"xui-icon-number9"
+                    },
+          
+                    {
+                        "id":"c",
+                        "caption":"1000",
+                        "imageClass":"xui-icon-number10"
+                    }
+                ])
             );
             
             return children;
