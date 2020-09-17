@@ -313,7 +313,7 @@ xui.Class('App', 'xui.Module',{
             
             append(
                 xui.create("xui.UI.List")
-                .setHost(host,"xui_ui_list2")
+                .setHost(host,"xui_ui_list5")
                 .setDirtyMark(false)
                 .setItems([
                     {
@@ -337,11 +337,11 @@ xui.Class('App', 'xui.Module',{
                         "imageClass":"xui-icon-number4"
                     }
                 ])
-                .setLeft("3.8095238095238093em")
-                .setTop("20.571428571428573em")
-                .setWidth("17.523809523809526em")
-                .setHeight("9.676190476190476em")
-                .setLabelSize("7.619047619047619em")
+                .setLeft("25.142857142857142em")
+                .setTop("24.38095238095238em")
+                .setWidth("26em")
+                .setSelMode("multibycheckbox")
+                .setLabelSize("8em")
                 .setLabelCaption("Objective")
                 .setValue("a")
             );
