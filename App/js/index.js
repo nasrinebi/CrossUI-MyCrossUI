@@ -183,11 +183,8 @@ xui.Class('App', 'xui.Module',{
                         "id":"b",
                         "caption":"Scatter Search",
                         "imageClass":"xui-icon-number2"
-                    },
-                    {
-                        "id":"ds",
-                        "caption":"ds"
                     }
+
                 ])
             );
             
