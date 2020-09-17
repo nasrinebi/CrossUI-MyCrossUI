@@ -203,7 +203,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_button6")
                 .setDirtyMark(false)
                 .setLeft("18.285714285714285em")
-                .setTop("25.904761904761905em")
+                .setTop("34.285714285714285em")
                 .setCaption("Run")
                 .setImageClass("xui-icon-xui")
                 .onClick([
@@ -228,7 +228,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_button10")
                 .setDirtyMark(false)
                 .setLeft("24.38095238095238em")
-                .setTop("25.904761904761905em")
+                .setTop("34.285714285714285em")
                 .setCaption("Save")
                 .setImageClass("xui-icon-xui")
                 .onClick([
@@ -309,6 +309,41 @@ xui.Class('App', 'xui.Module',{
                         "imageClass":"xui-icon-number3"
                     }
                 ])
+            );
+            
+            append(
+                xui.create("xui.UI.List")
+                .setHost(host,"xui_ui_list2")
+                .setDirtyMark(false)
+                .setItems([
+                    {
+                        "id":"a",
+                        "caption":"R-Squared",
+                        "imageClass":"xui-icon-number1"
+                    },
+                    {
+                        "id":"b",
+                        "caption":"NSE",
+                        "imageClass":"xui-icon-number2"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"PBIAS",
+                        "imageClass":"xui-icon-number3"
+                    },
+                    {
+                        "id":"d",
+                        "caption":"MSE",
+                        "imageClass":"xui-icon-number4"
+                    }
+                ])
+                .setLeft("3.8095238095238093em")
+                .setTop("20.571428571428573em")
+                .setWidth("17.523809523809526em")
+                .setHeight("9.676190476190476em")
+                .setLabelSize("7.619047619047619em")
+                .setLabelCaption("Objective")
+                .setValue("a")
             );
             
             return children;
