@@ -124,27 +124,27 @@ xui.Class('App', 'xui.Module',{
                         "imageClass":"xui-icon-number4"
                     },
                     {
-                        "id":"c",
+                        "id":"e",
                         "caption":"600",
                         "imageClass":"xui-icon-number5"
                     },
                     {
-                        "id":"c",
+                        "id":"f",
                         "caption":"700",
                         "imageClass":"xui-icon-number6"
                     },
                     {
-                        "id":"c",
+                        "id":"g",
                         "caption":"800",
                         "imageClass":"xui-icon-number7"
                     },
                     {
-                        "id":"c",
+                        "id":"h",
                         "caption":"900",
                         "imageClass":"xui-icon-number8"
                     },
                     {
-                        "id":"c",
+                        "id":"i",
                         "caption":"1000",
                         "imageClass":"xui-icon-number9"
                     }
