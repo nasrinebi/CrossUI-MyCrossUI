@@ -195,11 +195,11 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input1")
                 .setDirtyMark(false)
-                .setLeft("13.714285714285714em")
+                .setLeft("2.2857142857142856em")
                 .setTop("1.5238095238095237em")
-                .setWidth("21.02857142857143em")
-                .setLabelSize("8em")
-                .setValue("     Hydrologic Modeling")
+                .setWidth("37.02857142857143em")
+                .setLabelSize("12em")
+                .setValue("             Hydrologic Modeling and Optimization")
             );
             
             append(
