@@ -24,7 +24,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput5")
                 .setDirtyMark(false)
-                .setLeft("6.095238095238095em")
+                .setLeft("3.8095238095238093em")
                 .setTop("3.8095238095238093em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -36,7 +36,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput7")
                 .setDirtyMark(false)
-                .setLeft("6.095238095238095em")
+                .setLeft("3.8095238095238093em")
                 .setTop("6.857142857142857em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -48,7 +48,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput8")
                 .setDirtyMark(false)
-                .setLeft("6.095238095238095em")
+                .setLeft("3.8095238095238093em")
                 .setTop("9.904761904761905em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -60,7 +60,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput11")
                 .setDirtyMark(false)
-                .setLeft("6.095238095238095em")
+                .setLeft("3.8095238095238093em")
                 .setTop("12.952380952380953em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -72,7 +72,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput12")
                 .setDirtyMark(false)
-                .setLeft("6.095238095238095em")
+                .setLeft("3.8095238095238093em")
                 .setTop("16em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -84,7 +84,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput15")
                 .setDirtyMark(false)
-                .setLeft("6.095238095238095em")
+                .setLeft("3.8095238095238093em")
                 .setTop("19.047619047619047em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -143,11 +143,57 @@ xui.Class('App', 'xui.Module',{
                         "caption":"900",
                         "imageClass":"xui-icon-number8"
                     },
-    
                     {
                         "id":"c",
                         "caption":"1000",
                         "imageClass":"xui-icon-number9"
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput30")
+                .setDirtyMark(false)
+                .setLeft("24.38095238095238em")
+                .setTop("6.857142857142857em")
+                .setWidth("17.98095238095238em")
+                .setLabelSize("8em")
+                .setLabelCaption("             ET")
+                .setType("file")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput31")
+                .setDirtyMark(false)
+                .setLeft("24.38095238095238em")
+                .setTop("9.904761904761905em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Optimization")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id":"a",
+                        "caption":"NSGAII",
+                        "imageClass":"xui-icon-number1"
+                    },
+                    {
+                        "id":"b",
+                        "caption":"Scatter Search",
+                        "imageClass":"xui-icon-number2"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"item 3",
+                        "imageClass":"xui-icon-number3"
+                    },
+                    {
+                        "id":"d",
+                        "caption":"item 4",
+                        "imageClass":"xui-icon-number4",
+                        "disabled":true
                     }
                 ])
             );
