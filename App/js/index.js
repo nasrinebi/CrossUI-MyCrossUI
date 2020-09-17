@@ -105,55 +105,49 @@ xui.Class('App', 'xui.Module',{
                 .setItems([
                     {
                         "id":"a",
-                        "caption":"100",
+                        "caption":"200",
                         "imageClass":"xui-icon-number1"
                     },
                     {
                         "id":"b",
-                        "caption":"200",
+                        "caption":"300",
                         "imageClass":"xui-icon-number2"
                     },
                     {
                         "id":"c",
-                        "caption":"300",
+                        "caption":"400",
                         "imageClass":"xui-icon-number3"
                     },
                     {
                         "id":"d",
-                        "caption":"400",
+                        "caption":"500",
                         "imageClass":"xui-icon-number4"
                     },
                     {
                         "id":"c",
-                        "caption":"500",
+                        "caption":"600",
                         "imageClass":"xui-icon-number5"
                     },
                     {
                         "id":"c",
-                        "caption":"600",
+                        "caption":"700",
                         "imageClass":"xui-icon-number6"
                     },
                     {
                         "id":"c",
-                        "caption":"700",
+                        "caption":"800",
                         "imageClass":"xui-icon-number7"
                     },
                     {
                         "id":"c",
-                        "caption":"800",
+                        "caption":"900",
                         "imageClass":"xui-icon-number8"
                     },
     
                     {
                         "id":"c",
-                        "caption":"900",
-                        "imageClass":"xui-icon-number9"
-                    },
-          
-                    {
-                        "id":"c",
                         "caption":"1000",
-                        "imageClass":"xui-icon-number10"
+                        "imageClass":"xui-icon-number9"
                     }
                 ])
             );
