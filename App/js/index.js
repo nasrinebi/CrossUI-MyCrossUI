@@ -337,12 +337,13 @@ xui.Class('App', 'xui.Module',{
                         "imageClass":"xui-icon-number4"
                     }
                 ])
-                .setLeft("25.142857142857142em")
-                .setTop("24.38095238095238em")
-                .setWidth("26em")
+                .setLeft("0em")
+                .setTop("20.571428571428573em")
+                .setWidth("25.21904761904762em")
+                .setHeight("8.914285714285715em")
                 .setSelMode("multibycheckbox")
                 .setLabelSize("8em")
-                .setLabelCaption("Objective")
+                .setLabelCaption("Objectives")
                 .setValue("a")
             );
             
