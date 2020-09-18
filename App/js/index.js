@@ -72,7 +72,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput12")
                 .setDirtyMark(false)
-                .setLeft("24.38095238095238em")
+                .setLeft("25.904761904761905em")
                 .setTop("17.523809523809526em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -84,7 +84,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput15")
                 .setDirtyMark(false)
-                .setLeft("24.38095238095238em")
+                .setLeft("25.904761904761905em")
                 .setTop("20.571428571428573em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -96,7 +96,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput20")
                 .setDirtyMark(false)
-                .setLeft("24.38095238095238em")
+                .setLeft("25.904761904761905em")
                 .setTop("5.333333333333333em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -167,7 +167,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput31")
                 .setDirtyMark(false)
-                .setLeft("24.38095238095238em")
+                .setLeft("25.904761904761905em")
                 .setTop("8.380952380952381em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -252,7 +252,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput143")
                 .setDirtyMark(false)
-                .setLeft("24.38095238095238em")
+                .setLeft("25.904761904761905em")
                 .setTop("11.428571428571429em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -286,7 +286,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput158")
                 .setDirtyMark(false)
-                .setLeft("24.38095238095238em")
+                .setLeft("25.904761904761905em")
                 .setTop("14.476190476190476em")
                 .setWidth("18em")
                 .setLabelSize("8em")
@@ -337,7 +337,7 @@ xui.Class('App', 'xui.Module',{
                         "imageClass":"xui-icon-number4"
                     }
                 ])
-                .setLeft("0em")
+                .setLeft("-2.2857142857142856em")
                 .setTop("20.571428571428573em")
                 .setWidth("25.21904761904762em")
                 .setHeight("8.914285714285715em")
@@ -345,6 +345,27 @@ xui.Class('App', 'xui.Module',{
                 .setLabelSize("8em")
                 .setLabelCaption("Objectives")
                 .setValue("a")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input2")
+                .setDirtyMark(false)
+                .setLeft("24.38095238095238em")
+                .setTop("23.61904761904762em")
+                .setWidth("19.504761904761907em")
+                .setLabelSize("10em")
+                .setLabelCaption("Runoff Reduction (%)")
+            );
+            
+            append(
+                xui.create("xui.UI.Image")
+                .setHost(host,"xui_ui_image6")
+                .setLeft("49.523809523809526em")
+                .setTop("2.2857142857142856em")
+                .setWidth("20.571428571428573em")
+                .setHeight("20.571428571428573em")
+                .setSrc("{/}img/hydrologic_modeling.jpg")
             );
             
             return children;
