@@ -368,6 +368,39 @@ xui.Class('App', 'xui.Module',{
                 .setSrc("{/}img/hydrologic_modeling.jpg")
             );
             
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input5")
+                .setDirtyMark(false)
+                .setLeft("24.38095238095238em")
+                .setTop("25.904761904761905em")
+                .setWidth("19.504761904761907em")
+                .setLabelSize("10em")
+                .setLabelCaption("TSS Reduction (%)")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input8")
+                .setDirtyMark(false)
+                .setLeft("24.38095238095238em")
+                .setTop("28.19047619047619em")
+                .setWidth("19.504761904761907em")
+                .setLabelSize("10em")
+                .setLabelCaption("TN Reduction (%)")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input9")
+                .setDirtyMark(false)
+                .setLeft("24.38095238095238em")
+                .setTop("30.476190476190474em")
+                .setWidth("19.504761904761907em")
+                .setLabelSize("10em")
+                .setLabelCaption("TP Reduction (%)")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
